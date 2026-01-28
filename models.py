@@ -14,7 +14,7 @@ class User(db.Model):
 class Transaction(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer)
-    type = db.Column(db.String(20))  # deposit / withdraw
+    type = db.Column(db.String(20))   # deposit / withdraw
     amount = db.Column(db.Float)
     status = db.Column(db.String(20), default="pending")
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
