@@ -1,1 +1,8 @@
-
+flask
+flask-sqlalchemy
+flask-cors
+flask-jwt-extended
+gunicorn
+psycopg2-binary
+requests
+python-dotenv
